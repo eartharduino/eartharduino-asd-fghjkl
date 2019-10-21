@@ -1,0 +1,102 @@
+ const int numLeds = 4;  //宣告陣列元素變數並設初值
+
+int ledPins[4] = {8, 9, 10, 11};  //宣告陣列，並給初值，此例為腳位8,9,10,11
+
+
+
+void setup()
+
+{
+
+    for (int i = 0; i < numLeds; i++) {
+
+/*for迴圈，宣告變數i，並設初值0，每次加1，當大於numLeds的直時離開迴圈*/
+
+        pinMode(ledPins[i], OUTPUT);
+
+    }
+
+}
+
+
+
+void loop()
+
+{
+
+    // 循序打開每一個LED燈
+
+    for (int i = 0; i < numLeds; i++) {
+
+        digitalWrite(ledPins[i], HIGH);
+
+        delay(100);
+
+    }    
+
+    // 循序關閉每一個LED燈
+
+    for (int i = 4; i >= 0; i--) {
+
+        digitalWrite(ledPins[i], LOW);
+
+        delay(100);
+
+    }    
+      // 循序打開每一個LED燈
+
+    for (int i = 0; i < numLeds; i++) {
+
+        digitalWrite(ledPins[i], HIGH);
+
+        delay(100);
+
+    }    
+
+    // 循序關閉每一個LED燈
+
+    for (int i = 4; i >= 0; i--) {
+
+        digitalWrite(ledPins[i], LOW);
+
+        delay(100);
+
+    }    
+      // 循序打開每一個LED燈
+
+    for (int i = 0; i < numLeds; i++) {
+  digitalWrite(ledPins[i], HIGH);
+
+        delay(200);  
+          digitalWrite(ledPins[i], LOW);
+
+        delay(50);
+         digitalWrite(ledPins[i], HIGH);
+
+        delay(200);  
+          digitalWrite(ledPins[i], LOW);
+
+        delay(50);
+
+    }    
+
+    // 循序關閉每一個LED燈
+
+    for (int i = 4; i >= 0; i--) {
+
+       digitalWrite(ledPins[i], HIGH);
+
+        delay(200);  
+          digitalWrite(ledPins[i], LOW);
+
+        delay(50);
+         digitalWrite(ledPins[i], HIGH);
+
+        delay(200);  
+          digitalWrite(ledPins[i], LOW);
+
+        delay(50);
+
+    }    
+
+}
