@@ -1,4 +1,4 @@
- const int numLeds = 4;  //宣告陣列元素變數並設初值
+const int numLeds = 4;  //宣告陣列元素變數並設初值
 
 int ledPins[4] = {8, 9, 10, 11};  //宣告陣列，並給初值，此例為腳位8,9,10,11
 
@@ -45,7 +45,7 @@ void loop()
     }    
       // 循序打開每一個LED燈
 
-    for (int i = 0; i < numLeds; i++) {
+    for (int i = 0; i<=4; i++) {
 
         digitalWrite(ledPins[i], HIGH);
 
@@ -70,13 +70,13 @@ void loop()
         delay(200);  
           digitalWrite(ledPins[i], LOW);
 
-        delay(50);
+        delay(80);
          digitalWrite(ledPins[i], HIGH);
 
         delay(200);  
           digitalWrite(ledPins[i], LOW);
 
-        delay(50);
+        delay(80);
 
     }    
 
@@ -89,13 +89,13 @@ void loop()
         delay(200);  
           digitalWrite(ledPins[i], LOW);
 
-        delay(50);
+        delay(80);
          digitalWrite(ledPins[i], HIGH);
 
         delay(200);  
           digitalWrite(ledPins[i], LOW);
 
-        delay(50);
+        delay(80);
 
     }    
 
