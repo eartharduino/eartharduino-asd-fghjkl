@@ -64,6 +64,6 @@ void loop() {
     Serial.println("done.");
   } else {
     // if the file didn't open, print an error:
-    Serial.println("error opening clock.txt");
+    Serial.println("error opening asas123");
   }
 }
